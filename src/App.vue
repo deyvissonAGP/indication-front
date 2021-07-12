@@ -54,7 +54,7 @@
             <td>{{ indicacao.cpf }}</td>
             <td>{{ indicacao.telefone }}</td>
             <td>{{ indicacao.email }}</td>
-            <td>{{ indicacao.status }}</td>
+            <td>{{ indicacao.status_id }}</td>
             <td>
               <button @click="editar(indicacao)" class="waves-effect btn-small blue darken-1"><i class="material-icons">create</i></button>
               <button @click="remover(indicacao)" class="waves-effect btn-small red darken-1"><i class="material-icons">delete_sweep</i></button>
@@ -85,7 +85,7 @@ export default {
         cpf: '',
         telefone: '',
         email: '',
-        status: ''
+        status_id: ''
       },
       indicacoes: [],
       errors: []
